@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
  const prefix = ">";
 client.on('ready', () => {
-      client.user.setActivity(`${client.users.size} Users!`, { type: 'WATCHING' })
+      client.user.setActivity(`>help | ${client.users.size} Users!`, { type: 'WATCHING' })
 
 });
 
