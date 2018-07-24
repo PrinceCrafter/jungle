@@ -41,6 +41,8 @@ ${prefix}server ⇏ لمعرفة معلومات السيرفر
 
 ${prefix}roles ⇏ لعرض كل رتب السيرفر
 
+${prefix}users ⇏ Bot users number
+
 ${prefix}inv ⇏ لدعوة البوت لسيرفرك
 
 ${prefix}cc ⇏ لصنع الوان
@@ -100,6 +102,16 @@ client.on('message', message => {
         message.channel.sendEmbed(embed);
     }
 });
+
+
+client.on("message", message => {
+    var prefix = ">";
+ if (message.content === ">users") {
+  const embed = new Discord.RichEmbed()  
+      .setColor("#000000") 
+      .setDescription(`
+${client.users.size} Users!
+`
 
 
 	client.on('message', message => {
