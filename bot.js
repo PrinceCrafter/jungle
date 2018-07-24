@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
  const prefix = ">";
 client.on('ready', () => {
-     client.user.setActivity(" >help | By 'NoNo.",{type: 'WATCHING'})
+     client.user.setActivity(" >help | By Prince",{type: 'WATCHING'})
 
 });
 
@@ -14,7 +14,7 @@ client.on("message", message => {
       .setColor("#000000") 
       .setDescription(`
       
-                    Official-Bot Commands
+                    Jungle-Bot Commands
 Please Choose:
 
              
@@ -84,7 +84,7 @@ ${prefix}giveaway ⇏ to create a giveaway
 .addField(' الاعضاء👥 ',` [${client.users.size}] `)
 .addField('الرومات📚 ',`[${client.channels.size}]`) 
 .addField(' البنق🚀 ',`[${Date.now() - message.createdTimestamp}]`) 
-.addField('مصمم  + صاحب البوت ',`Official Team`)
+.addField('مصمم  + صاحب البوت ',`PrinceCrafter`)
 .setColor('#7d2dbe')
   message.channel.sendEmbed(embed);
     }
@@ -120,7 +120,7 @@ client.on('message', message => {
 client.on('message', msg => {
      if(msg.content === 'NoNo') {
          msg.guild.members.forEach(g => {
-                g.setNickname(' Official Member')
+                g.setNickname(' Jungle Member')
         })
     }
 })
@@ -131,7 +131,7 @@ client.on('ready', () => {
 });
          client.on('message', message => {
             if (message.content === 'hi') {
-              message.channel.send('Hello:heart: ');
+              message.channel.send('Hello :heart: ');
 
                
 
@@ -725,7 +725,7 @@ client.on('message', message => {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-    let copy = "Official-Bot";
+    let copy = "Jungle Bot";
     let request = `Requested By ${message.author.username}`;
     if (!args) return message.reply('**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
     msg.react('✅')
@@ -825,7 +825,7 @@ client.on('message', message => {
         .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
         .setTitle(`:small_orange_diamond: اضغط هنا `)
         .setURL(`https://discordapp.com/oauth2/authorize?client_id=470331722060529664&permissions=8&scope=bot`)
-        .setThumbnail(" https://cdn.discordapp.com/avatars/377904849783750667/6c76e412f18c142dfd711d05fb363869.png?size=2048")        
+        .setThumbnail(" https://discordapp.com/oauth2/authorize?client_id=471366466344583169&permissions=8&scope=bot")        
      message.channel.sendEmbed(embed);
        }
    });
