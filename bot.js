@@ -138,26 +138,6 @@ client.on('ready', () => {
             }
 }); 
 
-client.on('message' , async (message) => {
-       if(message.content.startsWith(`<@${client.user.id}>`)) {
-              
- let responses = [
-        'كيف يمكن اساعدك',
-        'مرحبا',
-        'لا تزعجني',
-        'ايش تبي ',
-        'هلا',
-        'كيفك',
-        '?',
-        'جرب >help'
-    ]
-    
-    // Fetch a random item from the array
-    let fetched = responses[Math.floor(Math.random() * responses.length)];
-   message.reply(fetched)
-       }
-  
-});
 
 
 
